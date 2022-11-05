@@ -65,4 +65,8 @@ public class Flat {
     public void setSquare(int square){
         this.square = square;
     }
+
+    public String toString(){
+        return String.format("Rooms: %d;\tSquare: %d;", rooms, square);
+    }
 }

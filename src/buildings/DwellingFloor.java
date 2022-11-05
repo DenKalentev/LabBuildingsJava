@@ -117,4 +117,14 @@ public class DwellingFloor {
         }
         return FlatWithBestSpase;
     }
+
+    public String toString(){
+        String stringOfFloor = "";
+        for (int i = 0; i < flats.size(); i++) {
+            Flat currentFlat = flats.get(i);
+            stringOfFloor += String.format("Number: %d;\tRooms: %d;\tSquare: %d\n", i, currentFlat.getRooms(), currentFlat.getSquare());
+        }
+        return stringOfFloor;
+    }
+
 }
